@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--background-color: hsl(0, 0%, 13%);
+	--header-color: hsl(14, 100%, 78%);
+	--text-color: #d7ccc8;
+	--border-color: hsla(15, 15%, 69%, 0.5);
+	--hover-bg-color: hsl(16, 25%, 38%);
+	--news-section-bg-color: hsl(0, 0%, 17%);
+	font-size: 62.5%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	min-height: 100vh;
+	font-size: 1.6rem;
+	font-family: "Ubuntu Mono", Arial, Helvetica, sans-serif;
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+.banner {
+	height: 11rem;
+	border-bottom: 1px solid var(--border-color);
+	margin-bottom: 4.7rem;
+}
+
+main {
+	max-width: 156.8rem;
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+aside {
+	max-width: 29.5rem;
+}
+
+article {
+	max-width: 85.4rem;
+}
+
+nav li {
+	border: 1px solid var(--border-color);
+	width: 29.5rem;
+	height: 5.9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.5rem;
+	background-color: hsl(240, 1%, 15%);
+}
+
+nav li:nth-last-child(1) {
+	margin-bottom: 8rem;
+}
+
+nav li:hover {
+	background-color: hsl(240, 1%, 18%);
+}
+
+.merch {
+	width: 29.5rem;
+}
+
+.merch li {
+	padding: 2rem 4.3rem;
+	text-align: center;
+	border: 1px solid var(--border-color);
+	margin-bottom: 2rem;
+	background-color: hsl(240, 1%, 22%);;
+}
+
+h1 {
+	color: var(--header-color);
+	font-size: 2.4rem;
+	margin-bottom: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+.vim-intro {
+	padding: 0rem 5.7rem
+}
+
+.vim-intro p {
+	margin-bottom: 1rem;
+	line-height: 2.3rem;
+}
+
+.vim-intro li {
+	margin-left: 4rem;
+	margin-bottom: 1rem;
+}
+
+.vim-intro ul li:first-child {
+	margin-top: 2rem;
+}
+
+.vim-intro ul li:last-child {
+	margin-bottom: 4.2rem;
+}
+
+.news-current-version {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: hsl(0, 0%, 17%);
+	padding: 1.4rem 5.7rem;
+	border-top: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+	margin-bottom: 4.2rem;
+}
+
+.news-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5.7rem;
+	margin-bottom: 2rem;
+}
