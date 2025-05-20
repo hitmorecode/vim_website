@@ -69,6 +69,10 @@ nav li {
 	background-color: hsl(240, 1%, 15%);
 }
 
+li a {
+	color: var(--text-color);
+}
+
 nav li:nth-last-child(1) {
 	margin-bottom: 8rem;
 }
