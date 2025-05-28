@@ -50,6 +50,10 @@ main {
 	justify-content: space-between;
 }
 
+.content {
+	line-height: 2.3rem;
+}
+
 aside {
 	max-width: 29.5rem;
 }
@@ -83,7 +87,7 @@ nav li:hover {
 }
 
 .merch {
-	width: 18.5rem;
+	/* width: 28.5rem; */
 }
 
 .merch li {
@@ -156,10 +160,10 @@ h2 {
 	}
 
 	.container {
-		width: 600px;
+		width: 650px;
 	}
 
 	.ads {
-		width: 300px;
+		width: 270px;
 	}
 }
