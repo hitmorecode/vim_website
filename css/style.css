@@ -7,7 +7,7 @@
 }
 
 :root {
-	--background-color: hsl(0, 0%, 13%);
+	--background-color: hsl(0, 0%, 13%); /* hsl(0, 0%, 17%) */
 	--header-color: hsl(14, 100%, 78%);
 	--text-color: hsl(16, 16%, 81%);
 	--news-header-color: hsl(43, 96%, 58%);
@@ -17,7 +17,7 @@
 	--downloads-section-text: hsl(26, 100%, 50%);
 	--script-section-text: hsl(291, 47%, 71%);
 	--links-color: hsl(165, 82%, 51%);
-	--hover-bg-color: hsl(16, 25%, 38%);
+	--hover-bg-color: hsla(16, 25%, 38%, .3);
 	font-size: 62.5%;
 }
 
@@ -34,7 +34,7 @@ body {
 	min-height: 100vh;
 	font-size: 1.6rem;
 	font-family: "Ubuntu Mono", Arial, Helvetica, sans-serif;
-	background-color: var(--background-color);
+	background-color: hsl(0, 0%, 17%); /*var(--background-color);*/
 	color: var(--text-color);
 	line-height: 2.3rem;
 }
@@ -64,7 +64,7 @@ article {
 	max-width: 85.4rem;
 }
 
-nav li {
+nav li a {
 	border: 1px solid var(--border-color);
 	width: 18.5rem;
 	height: 3.9rem;
@@ -84,8 +84,45 @@ nav li:nth-last-child(1) {
 	margin-bottom: 8rem;
 }
 
-nav li:hover {
+nav li a:hover {
 	background-color: var(--hover-bg-color); /*hsl(240, 1%, 18%);*/
+}
+
+.stable {
+	margin: 1.5rem 0;
+}
+
+#vim-features {
+	margin: 0 0 4rem 4rem;
+}
+
+.bar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section-divider {
+	background-color: hsl(0, 0%, 30%);
+	border-top: 0.1rem solid var(--border-color);
+	border-bottom: 0.1rem solid var(--border-color);
+	margin-bottom: 4rem;
+	padding: 1rem 2rem;
+}
+
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.news-section {
+	margin-bottom: 4rem;
+}
+
+.more-news {
+	text-align: center;
 }
 
 .merch {
