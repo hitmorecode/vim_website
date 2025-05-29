@@ -27,6 +27,7 @@ li {
 
 a {
 	text-decoration: none;
+	color: var(--links-color);
 }
 
 body {
@@ -35,6 +36,7 @@ body {
 	font-family: "Ubuntu Mono", Arial, Helvetica, sans-serif;
 	background-color: var(--background-color);
 	color: var(--text-color);
+	line-height: 2.3rem;
 }
 
 .banner {
@@ -51,7 +53,7 @@ main {
 }
 
 .content {
-	line-height: 2.3rem;
+	/* line-height: 2.3rem; */
 }
 
 aside {
@@ -151,6 +153,19 @@ h2 {
 	align-items: center;
 	padding: 0 5.7rem;
 	margin-bottom: 2rem;
+}
+
+.ads > section {
+	margin-bottom: 3rem;
+}
+
+footer {
+	height: 13rem;
+	margin-inline: auto;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 1920px) {
