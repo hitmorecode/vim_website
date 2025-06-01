@@ -34,7 +34,7 @@ body {
 	min-height: 100vh;
 	font-size: 1.6rem;
 	font-family: "Ubuntu Mono", Arial, Helvetica, sans-serif;
-	background-color: hsl(0, 0%, 17%); /*var(--background-color);*/
+	background-color: hsl(330, 2%, 17%); /*var(--background-color); hsl(330, 2%, 10%)*/
 	color: var(--text-color);
 	line-height: 2.3rem;
 }
@@ -86,6 +86,10 @@ nav li:nth-last-child(1) {
 
 nav li a:hover {
 	background-color: var(--hover-bg-color); /*hsl(240, 1%, 18%);*/
+}
+
+.content-section {
+	border-bottom: 0.1rem solid var(--border-color);
 }
 
 .stable {
@@ -151,6 +155,10 @@ h2 {
 	font-size: 2rem;
 }
 
+.news-section-header {
+	color: var(--header-color);
+}
+
 .vim-intro {
 	padding: 0rem 5.7rem
 }
@@ -193,7 +201,15 @@ h2 {
 }
 
 .ads > section {
-	margin-bottom: 3rem;
+	margin-bottom: 4rem;
+}
+
+.sponsors {
+	margin-bottom: 2rem;
+}
+
+.aside-header {
+	margin-bottom: 1rem;
 }
 
 footer {
