@@ -120,6 +120,11 @@ nav li a:hover {
 	margin-bottom: 4rem;
 }
 
+.author {
+	margin-top: 1rem;
+	font-style: italic;
+}
+
 .section-divider:nth-last-child(1) {
 	margin-bottom: 0;
 }
@@ -140,7 +145,7 @@ nav li a:hover {
 }
 
 .vim-tool {
-	padding: 0 0 4rem 0;
+	padding: 0 0 4rem;
 	/* border-bottom: 0.1rem solid var(--border-color); */
 }
 

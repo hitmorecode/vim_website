@@ -57,20 +57,21 @@
         <section class="bar-container section-divider">
           <!-- news -->
           <h2>News</h2>
-          <p class="version">Vim 9.0.1999 is the current version</p>
+          <p class="version">Vim 9.1.1455 is the current version</p>
         </section>
 
         <section class="content-section">
           <article class="container news-section">
             <!-- vim hosting -->
             <section class="section-header">
-              <h2 class="news-section-header">New Vim.org Homepage Hosting:</h2>
-              <p>2023-09-26</p>
+              <h2 class="news-section-header">Vim Update: Daily ARM64 Binaries Now Available!</h2>
+              <p>2025-05-28</p>
             </section>
             <article>
               <p class="content">
-                The Vim project has been moved to a new hosting provider. The hosting should be much more stable now and database problems should now also been solved. Thanks to <span><a href="#">Wavestack</a></span> for hosting us. (Christian Brabandt)
+                We're excited to share that the Vim project now provides daily ARM64 binaries through the vim-win32-installer repository! These builds make it easier than ever to run Vim on ARM64 Windows devices. Happy Vimming!
               </p>
+              <p class="author">Christian Brabandt</p>
             </article>
           </article>
         </section>
@@ -79,13 +80,18 @@
           <!-- moving the vim homepage -->
           <article class="container news-section">
             <section class="section-header">
-              <h2 class="news-section-header">Moving the Vi Homepage</h2>
-              <p>2023-09-24</p>
+              <h2 class="news-section-header">Vim 9.1.1391 brings a vertical tabpanel</h2>
+              <p>2025-05-16</p>
             </section>
             <article>
               <p class="content">
-                The Vim project will move to a new homepage on tuesday, september 26th, 2023 around 08:00 pm CEST. During that time there may be some issues connecting to the current homepage (or trying to login) but hopefully they will be resolved very soon. The new vim.org domain name should then resolve to the new IP 31.172.117.18. This homepage here will stay in read-only mode and no longer maintained. Read the <span><a href="">announcement</a></span> at the vim_announce mailing list. (Christian Brabandt)
+                Vim patch 9.1.1391 adds support for a vertical tabpanel.
+                
+                Vim patch v9.1.1391 brings support for a vertical tabpanel. This is similar to the tabline feature, but instead of using
+                a single horizontally line to show all tabpages, Vim will use a vertical tabpanel. You can customize how this should look like when to display the tabpanel and what exactly should be shown using the various tabpanel options ('tabpanel', 'tabpanelopt' and 'showtabpanel' option.) You can find some examples of how this changes, when looking at the pictures provided at the pull request 17263. This change has been contributed by Naruhiko Nishino, thanks for improving Vim!
+                Happy Vimming!
             </p>
+            <p class="author">Christian Brabandt</p>
             </article>
           </article>
         </section>
@@ -94,27 +100,12 @@
           <!-- r.i.p bram moolenaar -->
           <article class="news-section">
             <section class="section-header">
-              <h2 class="news-section-header">RIP Bram Moolenaar</h2>
-              <p>2023-08-09</p>
+              <h2 class="news-section-header">Vim 9.1.1243 improves the diff highlighting</h2>
+              <p>2025-03-27</p>
             </section>
             <article class="container">
-              <p class="content">The Vim project is deeply shocked and saddened by the <span><a href="">sudden passing of Bram</a></span>. We certainly
-              will miss him, his guidance and his humour. The Vim project wouldn't exist without his
-              ongoing passion to lead and develop Vim and the community for more than 30 years.</p>
-              <br>
-              <p>Our deepest condolences to all his family and may they have enough strengths to come through
-              these saddened times. We lost a great guy way too early, who should have had the chance to
-              enjoy and live for at least several more years!</p>
-              <br>
-              <p>In addition he was well-known for collecting donations for the <span><a href="">ICCF foundation</a></span> and helping
-              many children in Uganda. And despite the saddened news, during the last 7 days an incredible
-              amount of EURO 60,000 was donated. That is so awesome. Thank you all contributors! An
-              incredible amount of people have been giving respect and saying goodby and <span><a href="">here</a></span> and you'll
-              find obituary articles and links <span><a href="">here</a></span>.</p>
-              <br>
-              <p>It is in Brams interest to continue the Vim project even if development now will slow down,
-              but hopefully the community is being able to step up and continue the work in the next
-              years. (Christian Brabandt).</p>
+              <p class="content">Vim patch 9.1.1243 brings some nice improvements to the vim diff highlighting. It is now possible to enable character- and word diffs. This brings it closer to other diff highlighting tools like meld and Visual Studio Code. You can enable this by setting the new suboption "inline" for the "diffopt" setting like this: :set diffopt+=inline:word or :set diffopt+=inline:char. You can find some examples of how this changes, when looking at the pictures provided at the pull request 16881. This change has been contributed by Yee Cheng Chin, thanks for improving Vim!</p>
+              <p class="author">Christian Brabandt</p>
             </article>
           </article>
         </section>
@@ -138,7 +129,7 @@
         <section class="bar-container section-divider">
           <!-- recent scripts update -->
           <h2>Recent Scripts Updates</h2>
-          <p><span>5,919</span> scripts / <span>17,586,396</span> downloads</p>
+          <p><span>5,973</span> scripts / <span>19,681,415</span> downloads</p>
         </section>
 
         <section>
@@ -162,44 +153,56 @@
                   <th>Contributor</th>
                 </tr>
                 <tr class="tr-td">
-                  <td>2023-10-04</td>
-                  <td>1.6.0</td>
-                  <td>Vim -Ai</td>
-                  <td>Martin Bielik</td>
+                  <td>2025-06-10</td>
+                  <td>2.84.2</td>
+                  <td>gir-vim-syntax</td>
+                  <td>David Necas</td>
                 </tr>
                 <tr>
-                  <td class="td-content" colspan="4">AI-powered code assistant for Vim. OpenAI and ChatGPT plugin for Vim and Neovim (1.6.0) removed obsolete models</td>
+                  <td class="td-content" colspan="4">C extension syntax files for GTK+ and related libraries (20250610) Missing type constants for various non-classed types were fixed by better detecting the get-type constructs. Lists of extra symbols to add can now also define symbols to skip (omit). GLib syntax was updated to a slightly newer version 2.84.2. Several odd internal GLib macros were suppressed in the syntax files.</td>
                 </tr>
               
                 <tr class="tr-td">
-                  <td>2023-10-04</td>
-                  <td>1.2.0</td>
-                  <td>Foldsearch</td>
-                  <td>Markus Braun</td>
+                  <td>2025-06-10</td>
+                  <td>3.4.0</td>
+                  <td>Mark</td>
+                  <td>Ingo Karkat</td>
                 </tr>
                 <tr>
-                  <td class="td-content" colspan="4">Fold away lines that don't match a given pattern (1.2.0) - add abilitiy to choose the scope of foldsearch commands</td>
+                  <td class="td-content" colspan="4">Highlight several words in different colors simultaneously. (#1238 continued)
+                  (3.4.0) - ENH: Support mark persistence to sessions created via :mksession, too. *** You need to update to ingo-library
+                  (vimscript #4433) version 1.047!</td>
                 </tr>
 
                 <tr class="tr-td">
-                  <td>2023-10-04</td>
-                  <td>2.2</td>
-                  <td>Asyncrum</td>
-                  <td>Wei Lin</td>
+                  <td>2025-06-10</td>
+                  <td>1.047</td>
+                  <td>ingo-library</td>
+                  <td>Ingo Karkat</td>
                 </tr>
                 <tr>
-                  <td class="td-content" colspan="4">Run Async Shell Commands in Vim 8.0 and Output to Quickfix in Realtime (2.12.2) - accept "AsyncRun :!!command" to start
-                  GUI programs. - minor issues fixed.</td>
+                  <td class="td-content" colspan="4">Vimscript library of common functions. CHG: ingo#text#surroundings#ChangeEnclosedText() and ingo#text#surroundings#RemoveSingleCharDelimiters() now take an a:delimiterCharExpr instead of a literal a:delimiterChar. - ENH: ingo#plugin#persistence#CanPersist() also considers 'sessionoptions' containing "global", ingo#plugin#persistence#CanPersist() indicates the type(s) of persistence, ENH: ingo#plugin#persistence#CanPersist() also ...</td>
                 </tr>
 
                 <tr class="tr-td">
-                  <td>2023-10-04</td>
-                  <td>1.3.6</td>
-                  <td>HTML / XHTML Macros</td>
-                  <td>Christian J. Robinson</td>
+                  <td>2025-06-08</td>
+                  <td>1.0.1</td>
+                  <td>VimNC</td>
+                  <td>Mahadevan K</td>
                 </tr>
                 <tr>
-                  <td class="td-content" colspan="4">HTML/XHTML editing macros and menus (1.3.6) - File missing from zip archive</td>
+                  <td class="td-content" colspan="4">A simple and intuitive file manager plugin for Vim (1.0.1) - Improved navigation - Displays current folder - explicit entry for parent folder - enter key opens folder in vimnc insteadof the vim explorer
+                  </td>
+                </tr>
+
+                <tr class="tr-td">
+                  <td>2025-06-07</td>
+                  <td>9.8</td>
+                  <td>diffchar.vim</td>
+                  <td>Rick Howe</td>
+                </tr>
+                <tr>
+                  <td class="td-content" colspan="4">Highlight the exact differences, based on characters and words (9.8) Improved to follow "linematch" to check realigned diff lines when displayed on screen. Changed to avoid a conflictwith "inline" diff.</td>
                 </tr>
 
               </table>
