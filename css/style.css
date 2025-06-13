@@ -120,6 +120,10 @@ nav li a:hover {
 	margin-bottom: 4rem;
 }
 
+.post-date {
+  font-sytle: italic;
+}
+
 .author {
 	margin-top: 1rem;
 	font-style: italic;
