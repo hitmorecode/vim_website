@@ -65,13 +65,15 @@
             <!-- vim hosting -->
             <section class="section-header">
               <h2 class="news-section-header">Vim Update: Daily ARM64 Binaries Now Available!</h2>
-              <p class="post-date">2025-05-28</p>
             </section>
             <article>
               <p class="content">
                 We're excited to share that the Vim project now provides daily ARM64 binaries through the <a href="#">vim-win32-installer repository!</a> These builds make it easier than ever to run Vim on ARM64 Windows devices. Happy Vimming!
               </p>
-              <p class="author">Christian Brabandt</p>
+              <section class="signoff">
+                <p class="author">Christian Brabandt</p>
+                <p class="post-date">2025-05-28</p>
+              </section>
             </article>
           </article>
         </section>
@@ -81,17 +83,18 @@
           <article class="container news-section">
             <section class="section-header">
               <h2 class="news-section-header">Vim 9.1.1391 brings a vertical tabpanel</h2>
-              <p>2025-05-16</p>
             </section>
             <article>
               <p class="content">
                 Vim patch <a href="#">9.1.1391</a> adds support for a vertical tabpanel.
                 
-                Vim patch v9.1.1391 brings support for a vertical tabpanel. This is similar to the tabline feature, but instead of using
-                a single horizontally line to show all tabpages, Vim will use a vertical tabpanel. You can customize how this should look like when to display the tabpanel and what exactly should be shown using the various tabpanel options ('<a href="#">tabpanel</a>', '<a href="#">tabpanelopt</a>' and '<a href="#">showtabpanel</a>' option.) You can find some examples of how this changes, when looking at the pictures provided at the pull request <a href="#">17263</a>. This change has been contributed by Naruhiko Nishino, thanks for improving Vim!
+                Vim patch v9.1.1391 brings support for a vertical tabpanel. This is similar to the tabline feature, but instead of using a single horizontally line to show all tabpages, Vim will use a vertical tabpanel. You can customize how this should look like when to display the tabpanel and what exactly should be shown using the various tabpanel options ('<a href="#">tabpanel</a>', '<a href="#">tabpanelopt</a>' and '<a href="#">showtabpanel</a>' option.) You can find some examples of how this changes, when looking at the pictures provided at the pull request <a href="#">17263</a>. This change has been contributed by Naruhiko Nishino, thanks for improving Vim!
                 Happy Vimming!
-            </p>
-            <p class="author">Christian Brabandt</p>
+              </p>
+              <section class="signoff">
+                <p class="author">Christian Brabandt</p>
+                <p class="post-date">2025-05-16</p>
+              </section>
             </article>
           </article>
         </section>
@@ -101,20 +104,15 @@
           <article class="news-section">
             <section class="section-header">
               <h2 class="news-section-header">Vim 9.1.1243 improves the diff highlighting</h2>
-              <p>2025-03-27</p>
             </section>
             <article class="container">
-              <p class="content">Vim patch <a href="#">9.1.1243</a> brings some nice improvements to the vim diff highlighting. It is now possible to enable character- and word diffs. This brings it closer to other diff highlighting tools like meld and Visual Studio Code. You can enable this by setting the new suboption "inline" for the "diffopt" setting like this: <span class="line-of-code">:set diffopt+=inline:word</span> or <span class="line-of-code">:set diffopt+=inline:char</span>. You can find some examples of how this changes, when looking at the pictures provided at the pull request <a href="#">16881</a>. This change has been contributed by Yee Cheng Chin, thanks for improving Vim!</p>
-              <pre name="source" id="source1">
-                <code id="source" class="language-javascript">
-                  let a = 7;
-                  let b = 3;
-                  if (a > b) {
-                    console.log(a);
-                  }
-                </code>
-              </pre>
-              <p class="author">Christian Brabandt</p>
+              <p class="content">
+                Vim patch <a href="#">9.1.1243</a> brings some nice improvements to the vim diff highlighting. It is now possible to enable character- and word diffs. This brings it closer to other diff highlighting tools like meld and Visual Studio Code. You can enable this by setting the new suboption "inline" for the "diffopt" setting like this: <span class="line-of-code">:set diffopt+=inline:word</span> or <span class="line-of-code">:set diffopt+=inline:char</span>. You can find some examples of how this changes, when looking at the pictures provided at the pull request <a href="#">16881</a>. This change has been contributed by Yee Cheng Chin, thanks for improving Vim!
+              </p>
+              <section class="signoff">
+                <p class="author">Christian Brabandt</p>
+                <p class="post-date">2025-03-27</p>
+              </section>
             </article>
           </article>
         </section>
@@ -142,15 +140,6 @@
         </section>
 
         <section>
-          <!-- start script section -->
-          <!-- <section class="scripts-updates">
-            header
-            <p>Release Date</p>
-            <p>Version</p>
-            <p>Package</p>
-            <p>Contributor</p>
-          </section> -->
-
           <section>
             <!-- first script -->
             <article>
@@ -178,9 +167,7 @@
                   <td>Ingo Karkat</td>
                 </tr>
                 <tr>
-                  <td class="td-content" colspan="4">Highlight several words in different colors simultaneously. (#1238 continued)
-                  (3.4.0) - ENH: Support mark persistence to sessions created via :mksession, too. *** You need to update to ingo-library
-                  (vimscript #4433) version 1.047!</td>
+                  <td class="td-content" colspan="4">Highlight several words in different colors simultaneously. (#1238 continued) (3.4.0) - ENH: Support mark persistence to sessions created via :mksession, too. *** You need to update to ingo-library (vimscript #4433) version 1.047!</td>
                 </tr>
 
                 <tr class="tr-td">
@@ -218,28 +205,6 @@
             </article>
           </section>
 
-          <section>
-            <!-- second script -->
-            <article>
-
-            </article>
-          </section>
-
-          <section>
-            <!-- third script -->
-            <article>
-
-            </article>
-          </section>
-
-          <section>
-            <!-- forth script -->
-            <article>
-
-            </article>
-          </section>
-
-          <!-- end recent scripts -->
         </section>
 
         <section>

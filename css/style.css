@@ -93,10 +93,6 @@ nav li a:hover {
 	/* padding-top: 4rem; */
 }
 
-/* .content-section:nth-last-child(1) {
-	border-bottom: none;
-} */
-
 .stable {
 	margin: 1.5rem 0;
 }
@@ -120,13 +116,14 @@ nav li a:hover {
 	margin-bottom: 4rem;
 }
 
-.post-date {
-  font-sytle: italic;
-}
-
-.author {
-	margin-top: 1rem;
+.signoff {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2rem;
+	font-size: 1.5rem;
 	font-style: italic;
+	padding: 0 3rem;
 }
 
 .section-divider:nth-last-child(1) {
@@ -185,6 +182,7 @@ h2 {
 
 .news-section-header {
 	color: var(--header-color);
+	width: 53rem;
 }
 
 .vim-intro {
