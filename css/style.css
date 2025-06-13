@@ -136,6 +136,10 @@ nav li a:hover {
 	margin-bottom: 1rem;
 }
 
+.line-of-code {
+	color: hsl(8, 78%, 56%);
+}
+
 .news-section {
 	margin-bottom: 4rem;
 }
