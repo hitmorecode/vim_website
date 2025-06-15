@@ -333,12 +333,9 @@ footer {
 		/* justify-content: space-between; */
 	}
 
-	.container {
-		width: 650px;
-	}
-
+	.container,
 	table {
-		width: 65rem;
+		width: 80rem;
 	}
 
 	.ads {
