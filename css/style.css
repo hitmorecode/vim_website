@@ -329,13 +329,13 @@ footer {
 
 @media only screen and (max-width: 1920px) {
 	main {
-		width: 130rem;
+		width: 135rem;
 		/* justify-content: space-between; */
 	}
 
 	.container,
 	table {
-		width: 80rem;
+		width: 75rem;
 	}
 
 	.ads {
