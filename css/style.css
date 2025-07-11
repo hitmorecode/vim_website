@@ -363,9 +363,19 @@ footer {
 	width: 29.5rem;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1080px) {
+	body {
+		font-size: 1.8rem;
+	}
+	
 	main {
-		width: 135rem;
+		width: 150rem;
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+	main {
+		width: 125rem;
 		/* justify-content: space-between; */
 	}
 
